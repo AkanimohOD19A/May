@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator Dub</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div id="container">
+    <header>
+       <h1> Calculator DUB</h1>
+      <a href="https://codepen.io/cphemm/pen/reNwWd" class='button'>
+        Original Content
+      </a>
+    </header>
+
+
+    <div>
+      <form>
+        <p> How much was your bill? </p>
+        <p> $ <input id="bill_amt" type="number" placeholder="Bill Amount"> </p>
+
+        <p> How was your service? </p>
+         <p>  <select id="serviceQual">
+              <option disabled selected value="0">
+                  -- Choose an Option --
+              </option>
+              <option value="0.3">30&#37; &#45; Outstanding</option>
+              <option value="0.2">20&#37; &#45; Good</option>
+              <option value="0.15">15&#37; &#45; It was OK</option>
+              <option value="0.1">10&#37; &#45; Bad</option>
+              <option value="0.05">5&#37; &#45; Terrible</option>
+            </select>
+         </p>
+      </form>
+      <p> How many people are sharing the bill? </p>
+        <p> <input id="people_amt" type="number"
+                   placeholder="Number of People"> People
+        </p>
+        <p> <button type="button" class="button" id="calculate"> Calculate</button>
+        </p>
+    </div>
+<!--Calculating-->
+    <div id="totalTip">
+      <sup class="dollarSign">$</sup> <!--superscript-->
+      <span id="tip">0.00</span> <small id="each">each</small> <!--subscript-->
+    </div>
+<!--total Tip end-->
+  </div>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+body {
+    font-family: Roboto;
+    background: #2980b9;
+}
+
+#container {
+    height: 600px;
+    width: 360px;
+    margin: 100px auto;
+    background: #f7f7f7;
+    box-shadow: 00 3px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+header {
+    background: #1F030C;
+    color: white;
+    margin: 0; /*rm*/
+    padding: 10px 50px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 15px;
+    font-weight: normal;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+header .button {
+    text-decoration: none;
+    font-size: 9px;
+    background: #f7f7f7;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+header .button:hover {
+    color: #f7f7f7;
+    background: #1F030C;
+    border: #f7f7f7 1px solid;
+}
+
+p {
+    padding-left: 20px;
+}
+
+form input[type='text'] {
+    width = 90px;
+}
+
+input {
+    padding-left: 20px;
+}
+
+#bill_amt {
+    font-size: 14px;
+    color: #2980b9;
+    background-color: #f7f7f7;
+    width: 60%;
+    padding: 5px 5px 8px 8px;
+    margin-left: 10px;
+}
+
+#bill_amt:focus {
+    background: #fff;
+    border: 3px solid #1F030C;
+    outline: none;
+}
+
+#people_amt {
+    width: 60%;
+    padding: 5px 5px 8px 8px;
+    margin-left: 20px;
+    color: #2980B9;
+    background-color: #f7f7f7;
+    font-size: 14px;
+}
+
+.dollarSign {
+    display: inline;
+}
+
+#serviceQual {
+    color: #2980B9;
+    background-color: #f7f7f7;
+    padding: 5px 20px 5px 35px;
+    margin-left: 20px;
+    font-size: 14px;
+    /*border: #1F030C; interesting...*/
+}
+
+button {
+    text-transform: uppercase;
+    font-weight: normal;
+    display: block;
+    margin: 30px auto;
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    font-size: 17px;
+    color: #1F030C;
+}
+
+button:hover {
+    background: #1F030C;
+    border-bottom-color: #111;
+    color: white;
+}
+
+button:active {
+    position: relative;
+    top: 1px;
+}
+
+#totalTip {
+    font-size: 30px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+#totalTip:before {
+    content: "Tip amount";
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    text-transform: uppercase;
+}
+
+#totalTip sup {
+    font-size: 20px;
+    top: -18px;
+}
+
+#totalTip small {
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+}
